@@ -1,1 +1,93 @@
+@font-face {
+    font-family: 'Futura PT';
+    src: url('FuturaPT-Bold.eot');
+    src: local('Futura PT Bold'), local('FuturaPT-Bold'),
+        url('FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FuturaPT-Bold.woff2') format('woff2'),
+        url('FuturaPT-Bold.woff') format('woff'),
+        url('FuturaPT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+	--primari-color: #FFFFFF;
+	--second-color: rgba(0,0,0,.9);
+	--third-color: #2B3139;
+	--four-color: #dfded8;
+	--accent-color: #CC0000;
+
+	--primari-text-color: #232323;
+	--second-text-color: #FFFFFF;
+	--third-text-color: #c8b86c;
+	--four-text-color: #333333;
+	--accent-text-color: #CC0000;
+	}
+
+body {
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 400;
+}
+
+.font--futura{
+	font-family: 'Futura PT', sans-serif;
+	font-weight: 700;
+}
+
+.header{
+	background-color: var(--primari-color);
+	border-bottom: 1px solid var(--four-color);
+	width: 100%;
+	padding: 7px 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.header__container{
+	max-width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__logo{
+	padding: 0 5px;
+	background-color: var(--accent-color);
+}
+
+.header__link{
+	text-decoration: none;
+	color: var(--second-text-color);
+	text-transform: uppercase;
+	font-size: 48px;
+	line-height: initial;
+}
+
+.header__link:hover{
+	color: var(--second-text-color);
+}
+
+.burger{
+	width: 22px;
+	height: 19px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.burger__item{
+	width: 100%;
+	height: 5px;
+	background-color: var(--accent-color);
+}
+
+.burger__item:nth-child(1){
+	width: 60%;
+}
+
+.burger__item:nth-child(2){
+	width: 30%;
+	border-radius: 50%;
+}
 
