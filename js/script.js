@@ -33,4 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
 	countdownTimer();
 	timerId = setInterval(countdownTimer, 1000);
 
+	document.getElementById('scroll').addEventListener('click', scrollToElement);
+	function scrollToElement(e) {
+		let element = document.getElementById("product");
+		element.scrollIntoView(true);
+	}
+
 });
