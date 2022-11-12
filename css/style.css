@@ -445,23 +445,21 @@ input:focus{
 /*? comments posts */
 
 .posts{
-	display: flex;
-	margin-bottom: 46px;
+	margin-bottom: 80px;
 }
 
 .posts__wrap{
 	position: relative;
+	margin-left: 110px;
 }
 
 .posts__avatar{
-	width: 250px;
-	margin-right: 16px;
-	padding-top: 8px;
+	position: absolute;
 }
 
 .posts__avatar img{
 	width: 70px;
-	height: auto;
+	max-height: 70px;
 	max-width: 100%;
 	height: auto;
 	box-shadow: 5px 5px var(--primari-text-color);
@@ -476,7 +474,7 @@ input:focus{
 
 .posts__name::before{
 	content: '';
-	width: 50%;
+	width: 110%;
 	height: 50px;
 	background-color: var(--comments-bg-color);
 	position: absolute;
