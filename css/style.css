@@ -758,6 +758,10 @@ input:focus{
 		margin-bottom: -3%;
 	}
 
+	.card__title, .card__subtitle{
+		text-align: center;
+	}
+
 	.card__img{
 		width: 100%;
 	}
@@ -898,5 +902,55 @@ input:focus{
 }
 
 @media (max-width: 425px) {
+	.burger{
+		width: 30px;
+		height: 30px;
+	}
+
+	.card{
+		padding: 16px;
+	}
 	
+	.card__logo{
+		display: none;
+	}
+
+	.card__title{
+		font-size: 1.4rem;
+	}
+
+	.box{
+		width: 100%;
+	}
+
+	.form{
+		width: 90%;
+		margin: 32px auto;
+	}
+
+	.posts__wrap{
+		margin-left: 60px;
+	}
+
+	.posts__avatar img{
+		width: 42px;
+		max-height: 42px;
+	}
+
+	.posts__name{
+		font-size: 1rem;
+	}
+
+	.posts__name::before{
+		top: 8px;
+	}
+
+	.posts__text{
+		margin: 16px 0;
+		font-size: 0.8rem;
+	}
+
+	.social{
+		margin-bottom: 10%;
+	}
 }
