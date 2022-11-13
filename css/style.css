@@ -747,6 +747,10 @@ input:focus{
 }
 
 @media (max-width: 767px) {
+	.header__container{
+		align-items: center;
+	}
+
 	.main__widget{
 		flex-direction: column;
 		padding: 0;
@@ -756,6 +760,7 @@ input:focus{
 		max-width: 90%;
 		margin-right: 0;
 		margin-bottom: -3%;
+		justify-content: center;
 	}
 
 	.card__title, .card__subtitle{
@@ -793,8 +798,13 @@ input:focus{
 }
 
 @media (max-width: 575px){
+	.header{
+		display: flex;
+		align-items: center;
+	}
+
 	.header__container{
-		align-items: end
+		width: 100%;
 	}
 
 	.header__link, .footer__link, .comment__header-link{
@@ -923,9 +933,30 @@ input:focus{
 		width: 100%;
 	}
 
+	.discount{
+		width: 165px;
+		right: 5%;
+	}
+
+	.discount__title{
+		margin-bottom: 4px;
+	}
+
+	.discount__price{
+		font-size: 0.8rem;
+	}
+
+	.discount__new-price{
+		font-size: 1rem;
+	}
+
 	.form{
 		width: 90%;
 		margin: 32px auto;
+	}
+
+	.posts{
+		margin-bottom: 35px;
 	}
 
 	.posts__wrap{
@@ -935,6 +966,7 @@ input:focus{
 	.posts__avatar img{
 		width: 42px;
 		max-height: 42px;
+		box-shadow: 3px 3px var(--primari-text-color);
 	}
 
 	.posts__name{
@@ -948,9 +980,28 @@ input:focus{
 	.posts__text{
 		margin: 16px 0;
 		font-size: 0.8rem;
+		line-height: 1.2rem;
 	}
 
 	.social{
 		margin-bottom: 10%;
+	}
+}
+
+@media (max-width: 320px) {
+	.card__title {
+		font-size: 1.2rem;
+	}
+
+	.content__subtitle, .product__subtitle {
+		font-size: 0.9rem;
+	}
+
+	.box__title, .box__subtitle{
+		font-size: 0.9rem;
+	}
+
+	.font-sise--24 {
+		font-size: 1.2rem;
 	}
 }
