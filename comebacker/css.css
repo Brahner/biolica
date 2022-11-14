@@ -1,0 +1,108 @@
+#comebacker {
+	background: url(img/bgexit.png);
+    position: fixed;
+    left: 0;
+    top: 0; 
+    z-index: 9999;
+    width: 100%;
+    height: 100%; 
+	overflow: auto;
+	display: none;
+}
+
+#comebacker .close-undermodal {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	cursor: pointer;
+}
+
+#comebacker .close-over {
+	background: url(img/close.png) no-repeat 0 0;
+	color: var(--primari-text-color);
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+#comebacker .close-over:hover {
+	background-position: 0 bottom;
+}
+
+#comebacker .over-window {
+	background-color: white;
+	cursor: default;
+	left: 0;
+	right: 0; 
+	top: 10%;
+	margin: 0 auto 20px auto;
+	position: fixed;
+	padding: 60px 20px 60px 20px;
+	width: 40%;
+	z-index: 9999;
+	position: relative;
+} 
+
+#comebacker .comebacker__img{
+	width: 40%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+#comebacker .comebacker__img img{
+	width: 100%;
+	max-width: 150px;
+}
+
+#comebacker .title-comebacker {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#comebacker .title-oui div{
+	font-size: 20px;
+}
+
+#comebacker .form {
+	margin: 0 auto;
+}
+
+#comebacker .form form {
+	margin: 0 !important;
+}
+
+#comebacker .form input[type="submit"]:hover {
+	box-shadow: 0 0 10px var(--accent-color);
+}
+
+.comebackerhidden {
+	overflow: hidden;
+} 
+
+@media (max-width: 1200px) {
+	#comebacker .form input[type="text"] {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1023px) {
+	#comebacker .over-window {
+		width: 60%;
+	}
+}
+
+@media (max-width: 767px) {
+	#comebacker .over-window {
+		width: 75%;
+	}
+}
+
+@media (max-width: 575px) {
+	#comebacker .over-window {
+		width: 90%;
+	}
+}

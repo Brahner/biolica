@@ -128,7 +128,6 @@ body {
 .menu--active{
 	width: 100%;
 	z-index: 99;
-	/* transition: width 0.3s ease-out 0.1s; */
 }
 
 .menu__wrap{
