@@ -9,7 +9,6 @@
 .header{
 	background-color: var(--primari-color);
 	border-bottom: 1px solid var(--four-color);
-	min-height: 65px;
 	width: 100%;
 	padding: 7px 0 0;
 	position: fixed;
