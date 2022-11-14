@@ -84,6 +84,13 @@
 } 
 
 @media (max-width: 1200px) {
+	#comebacker .over-window {
+		top: 5%;
+		padding: 40px 20px 40px 20px;
+		width: 60%;
+
+	}
+
 	#comebacker .form input[type="text"] {
 		width: 100%;
 	}

@@ -66,6 +66,10 @@
 		margin-bottom: -3%;
 		justify-content: center;
 	}
+		
+	.card__logo{
+		display: none;
+	}
 
 	.card__title, .card__subtitle{
 		text-align: center;
@@ -237,10 +241,6 @@
 
 	.card{
 		padding: 16px;
-	}
-	
-	.card__logo{
-		display: none;
 	}
 
 	.card__title{
