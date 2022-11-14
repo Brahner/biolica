@@ -1,0 +1,105 @@
+/*? class styles */
+
+.d--block{
+	display: block;
+}
+
+.float-left{
+	float: left;
+	margin: 9px 20px 0 0;
+}
+
+.float-left img{
+	margin-bottom: 0;
+}
+
+.font--futura{
+	font-family: 'Futura PT', Arial, sans-serif;
+	font-weight: 700;
+}
+
+.font--futura-book{
+	font-family: 'Futura PT Book', Arial, sans-serif;
+	font-weight: normal;
+}
+
+.font--italic{
+	font-style: italic;
+	font-size: 1.25rem;
+	line-height: 1.625rem;
+	color: var(--accent-text-color);
+	text-transform: none;
+}
+
+.font-sise--24{
+	font-size: 1.5rem;
+}
+
+.color--primari{
+	color: var(--primari-text-color);
+}
+
+.color--accent{
+	color: var(--accent-text-color);
+}
+
+.ta--center{
+	text-align: center;
+}
+
+.width--max30{
+	max-width: 30%;
+}
+
+.width--100{
+	width: 100%;
+}
+
+.mb--0{
+	margin-bottom: 0;
+}
+
+.mb--20{
+	margin-bottom: 20px;
+}
+
+.m--0-auto{
+	margin: 0 auto;
+}
+
+.pl-50{
+	padding-left: 50px;
+}
+
+.line--bottom{
+	position: relative;
+}
+
+.line--bottom::after{
+	position: absolute;
+	left: 0;
+	content: "";
+	height: 4px;
+	width: 20%;
+	background-color: var(--accent-color);
+}
+
+.marker{
+	list-style-position: outside;
+	margin: 0 auto 16px 16px;
+}
+
+.marker::marker{
+	color: var(--accent-color);
+}
+
+.scale {
+	overflow: hidden;
+}
+.scale img {
+	transition: 1s;
+}
+.scale img:hover {
+	transform: scale(1.2);
+}
+
