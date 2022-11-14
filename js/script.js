@@ -1,4 +1,29 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+
+
+	const menu = document.querySelector('.menu'),
+	wrap = document.querySelector('.menu__wrap'),
+	item = document.querySelector('.menu__items'),
+	burger = document.querySelector('.burger'),
+	close = document.querySelector('.menu__btn');
+
+	burger.addEventListener('click', () => {
+		menu.classList.toggle('menu--active');
+		wrap.classList.toggle('menu__wrap--active');
+	});
+
+	close.addEventListener('click', () => {
+		menu.classList.toggle('menu--active');
+		wrap.classList.toggle('menu__wrap--active');
+	});
+
+	item.addEventListener('click', () => {
+		menu.classList.toggle('menu--active');
+		wrap.classList.toggle('menu__wrap--active');
+	});
+
+
 	const date = new Date();
 	date.setMinutes(date.getMinutes() + 10);
 	const deadline = date;
