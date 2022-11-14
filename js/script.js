@@ -1,5 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+	const myScrollTimeline = new ScrollTimeline({
+		source: document.scrollingElement,
+		scrollSource: document.scrollingElement,
+		orientation: 'block',
+		scrollOffsets: [
+			new CSSUnitValue(0, 'percent'),
+			new CSSUnitValue(100, 'percent'),
+		],
+	});
+
+	document.querySelector(".progress").animate({
+		transform: ["scaleX(0)", "scaleX(1)"]},
+		{
+			duration: 1, 
+			fill: "forwards", 
+			timeline: myScrollTimeline 
+		}
+	);
 
 
 	const menu = document.querySelector('.menu'),

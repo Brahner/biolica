@@ -19,6 +19,10 @@
 		height: 7px;
 		background-color: var(--primari-color);
 	}
+	
+	.progress{
+		background: var(--primari-color);
+	}
 
 	.menu__wrap--active {
 		right: 0;
@@ -109,6 +113,7 @@
 	.header{
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	.header__container{
