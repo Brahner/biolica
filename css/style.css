@@ -133,7 +133,7 @@ body {
 
 .menu__wrap{
 	position: fixed;
-	right: -100%;
+	right: -200%;
 	top: 0;
 	width: 380px;
 	height: 100%;
@@ -815,6 +815,10 @@ input:focus{
 		background-color: var(--primari-color);
 	}
 
+	.menu__wrap--active {
+		right: 0;
+	}
+
 	.card__title{
 		font-size: 1.5rem;
 	}
@@ -904,6 +908,10 @@ input:focus{
 
 	.header__link, .footer__link, .comment__header-link{
 		font-size: 28px;
+	}
+
+	.menu__wrap--active {
+		width: 92%;
 	}
 
 	.content__subtitle, .product__subtitle{
